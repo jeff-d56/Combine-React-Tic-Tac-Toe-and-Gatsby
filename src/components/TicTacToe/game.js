@@ -1,6 +1,6 @@
 import React from "react"
-import Board from "../components/Board"
-import calculateWinner from "../components/calculateWinner"
+import Board from "../TicTacToe/board"
+import calculateWinner from "../TicTacToe/calculateWinner"
 
 export default class Game extends React.Component {
   constructor(props) {

@@ -1,5 +1,5 @@
 import React from "react"
-import Game from "../components/game"
+import Game from "../components/TicTacToe/game"
 import './index.css';
 
 export default function Home() {
