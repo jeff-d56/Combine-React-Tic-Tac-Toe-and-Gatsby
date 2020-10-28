@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test if square displays correct value renders correctly 1`] = `
+<button
+  className="square"
+  onClick={[Function]}
+>
+  0
+</button>
+`;
