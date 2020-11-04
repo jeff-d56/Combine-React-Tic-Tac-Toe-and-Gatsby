@@ -1,6 +1,9 @@
 import React from "react"
 import Board from "../TicTacToe/board"
 import calculateWinner from "../TicTacToe/calculateWinner"
+import DisplayNextPlayer  from "../TicTacToe/displayNextPlayer"
+import DisplayMoves  from "../TicTacToe/displayMoves"
+
 
 export default class Game extends React.Component {
   constructor(props) {
@@ -42,6 +45,8 @@ export default class Game extends React.Component {
     });
   }
 
+
+
   render() {
     const history = this.state.history;
     const current = history[this.state.stepNumber];
@@ -58,12 +63,14 @@ export default class Game extends React.Component {
       );
     });
 
-    let status;
+    
+	let status;
     if (winner) {
-      status = "Winner: " + winner;
+		status = "Winner: " + winner;
     } else {
-      status = "Next player: " + (this.state.xIsNext ? "X" : "O");
+		status = "Next player: " + (this.state.xIsNext ? "X" : "O");
     }
+    
 
     return (
       <div className="game">
@@ -74,8 +81,8 @@ export default class Game extends React.Component {
           />
         </div>
         <div className="game-info">
-          <div>{status}</div>
-          <ol>{moves}</ol>
+			<DisplayNextPlayer name = {status}/>
+			<DisplayMoves name = {moves}/>
         </div>
       </div>
     );

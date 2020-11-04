@@ -2,7 +2,7 @@ import React from "react"
 
 export const PureHeader = ({ data }) => (
   <header>
-    <h1>{data.site.siteMetadata.title}</h1>
+    <h1 className="title">{data.site.siteMetadata.title}</h1>
   </header>
 )
 

@@ -4,7 +4,7 @@ import renderer from "react-test-renderer"
 import { PureHeader as Header } from "../header"
 
 describe("Header", () => {
-  it("renders correctly", () => {
+  it("test if header renders correctly with snapshot", () => {
     const data = {
       site: {
         siteMetadata: {
